@@ -2,9 +2,9 @@
   <div class="home">
     <div class="container">
       <HelloWorld msg="Welcome to online shop" />
-      <img src="../assets/images/slide1.png" class="userlogo" />
-      <img src="../assets/images/slide2.png" class="userlogo" />
-      <img src="../assets/images/slide3.png" class="userlogo" />
+      <img src="../assets/images/slide1.png" class="slidelogo" />
+      <img src="../assets/images/slide2.png" class="slidelogo" />
+      <img src="../assets/images/slide3.png" class="slidelogo" />
     </div>
   </div>
 </template>
@@ -18,30 +18,6 @@ export default {
   components: {
     HelloWorld,
 
-  },
-  data() {
-    return {
-      images: [
-        {
-          id:1,
-          src: "../assets/images/slide1.png",
-          title: "Coke",
-          show: true,
-        },
-        {
-          id:2,
-          src: "../assets/images/slide2.png",
-          title: "Pepsi",
-          show: true,
-        },
-        {
-          id:3,
-          src: "../assets/images/slide3.png",
-          title: "Mirinda",
-          show: true,
-        },
-      ],
-    };
   }
 };
 </script>

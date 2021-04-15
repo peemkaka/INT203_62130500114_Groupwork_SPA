@@ -7,8 +7,19 @@
       <img src="../assets/images/cart.png" class="cartlogo" />
       <base-card>
         <ul v-for="c in cart" :key="c.id">
-          <li>
-            <span class="text-salmon italic">{{ c.name }} amount: {{c.amount}}</span>
+          <li class="pb-2">
+            <span class="text-salmon italic">{{ c.name }} </span
+            ><span class="text-green-600 italic"> amount: {{ c.amount }}</span>
+
+            <button class="bg-green-500 rounded-sm py-1 px-2 text-white ml-1">
+              edit
+            </button>
+            <button
+              @click="deleteProduct(c.id)"
+              class="bg-red-700 rounded-sm py-1 px-2 text-white ml-1"
+            >
+              delete
+            </button>
           </li>
         </ul>
       </base-card>
@@ -29,6 +40,12 @@ export default {
     };
   },
   methods: {
+    async deleteProduct(id){
+      await fetch(`${this.url}/${id}`,{
+        method:'DELETE',
+      })
+      this.cart = this.cart.filter((c) => c.id !== id)
+    },
     async addNewCart(addingProduct) {
       const res = await fetch(this.url,
       {

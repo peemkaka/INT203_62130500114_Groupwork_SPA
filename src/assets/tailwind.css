@@ -22,6 +22,9 @@
 .userlogo{
     @apply pt-4;
 }
+.slidelogo{
+    @apply pt-6 h-3/5 w-4/5;
+}
 .borderproduct{
     @apply border border-red-500 px-60 py-60;
 }

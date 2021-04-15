@@ -16,9 +16,9 @@
             <div>
               <input
                 type="radio"
-                name="Pepsix1"
+                name="PepsiX1"
                 id="product-one"
-                value="Pepsix1"
+                value="PepsiX1"
                 v-model="productP"
               />
               <label class="label" for="product-one"> Product 1</label>
@@ -59,10 +59,12 @@
             <p v-if="invalidAmount" class="text-red-500">
               Please select your amount > 0
             </p>
+            <div class="pt-2">
+              <button class="bg-salmon rounded-full p-2 text-white font-bold">
+                Add To Cart
+              </button>
+            </div>
           </base-card>
-          <button class="bg-salmon rounded-full p-2 text-white font-bold">
-            Add To Cart
-          </button>
         </form>
       </div>
 
@@ -114,22 +116,26 @@ export default {
       } else {
         this.invalidProduct = false;
       }
-      if (this.enteredAmount === "" || this.enteredAmount <0){
-            this.invalidAmount = true;
+      if (this.enteredAmount === "" || this.enteredAmount < 0) {
+        this.invalidAmount = true;
       } else {
         this.invalidAmount = false;
       }
       console.log(`product value: ${this.productP}`);
       console.log(`product amount ${this.enteredAmount}`);
       console.log(`invalid product: ${this.invalidProduct}`);
-      if(!this.invalidProduct && !this.invalidAmount && this.enteredAmount >= 0 ){
-      const productToCart = {
-        name: this.productP,
-        amount: this.enteredAmount,
-      };
-      this.enteredAmount = "";
-      this.productP = null;
-      this.$emit("addtocart-submit", productToCart);
+      if (
+        !this.invalidProduct &&
+        !this.invalidAmount &&
+        this.enteredAmount >= 0
+      ) {
+        const productToCart = {
+          name: this.productP,
+          amount: this.enteredAmount,
+        };
+        this.enteredAmount = "";
+        this.productP = null;
+        this.$emit("addtocart-submit", productToCart);
       }
     },
   },
