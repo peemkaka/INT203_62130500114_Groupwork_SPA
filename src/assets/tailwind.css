@@ -4,6 +4,9 @@
 
 @tailwind utilities;
 
+.cartlogo{
+    @apply w-10 h-10;
+}
 .logo {
     @apply w-24 h-24;
 }
@@ -29,6 +32,6 @@
     @apply border border-gray-500 rounded-md  p-1;
   }
   .product-Container{
-    @apply border border-red-500 px-28 py-28
+    @apply border border-red-500 px-28 py-28;
   }
   

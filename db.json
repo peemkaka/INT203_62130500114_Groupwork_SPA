@@ -1,6 +1,9 @@
 {
-    "cart" : [
-        {  "id": 1,"name":"Pepsix1" }
-
-    ]
+  "cart": [
+    {
+      "id": 1,
+      "name": "Pepsix1",
+      "amount": "2"
+    }
+  ]
 }
