@@ -11,7 +11,7 @@
     @apply w-24 h-24;
 }
 .container {
-    @apply flex flex-col justify-center items-center p-4 ;
+    @apply flex flex-col justify-center items-center  ;
 } 
 .app{
     @apply flex flex-col justify-start items-start p-2;
@@ -32,7 +32,7 @@
     @apply font-bold my-2;
   }
   .input {
-    @apply border border-gray-500 rounded-md  p-1;
+    @apply border border-gray-500 rounded-md  px-2;
   }
   .product-Container{
     @apply border border-red-500 px-28 py-28;

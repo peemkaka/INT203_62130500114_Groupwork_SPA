@@ -18,3 +18,9 @@
     </div>
   </div>
 </template>
+<style scoped>
+  .routerlink:hover{
+    color:blueviolet;
+    transition: transform .2s;
+  }
+</style>

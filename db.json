@@ -1,9 +1,91 @@
 {
   "cart": [
     {
+      "name": "SpriteX2",
+      "option": "300ml",
+      "price": "12",
+      "amount": "1",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
       "name": "PepsiX1",
-      "amount": "2",
-      "id": 3
+      "option": "150ml",
+      "price": "10",
+      "amount": "1",
+      "img": "https://images.unsplash.com/photo-1553456558-aff63285bdd1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+    },
+    {
+      "id": 2,
+      "name": "PepsiX2",
+      "option": "200ml",
+      "price": "12",
+      "amount": "1",
+      "img": "https://images.unsplash.com/photo-1531384370597-8590413be50a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+    },
+    {
+      "id": 3,
+      "name": "PepsiX3",
+      "option": "300ml",
+      "price": "25",
+      "amount": "1",
+      "img": "https://images.unsplash.com/photo-1502389743708-d00f658638bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80"
+    },
+    {
+      "id": 4,
+      "name": "CokeX1",
+      "option": "150ml",
+      "price": "10",
+      "amount": "1",
+      "img": "https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=701&q=80"
+    },
+    {
+      "id": 5,
+      "name": "CokeX2",
+      "option": "200ml",
+      "price": "12",
+      "amount": "1",
+      "img": "https://images.unsplash.com/photo-1543253687-c931c8e01820?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=701&q=80"
+    },
+    {
+      "id": 6,
+      "name": "CokeX3",
+      "option": "300ml",
+      "price": "25",
+      "amount": "1",
+      "img": "https://images.unsplash.com/photo-1591284235428-95d94fe5f4a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+    },
+    {
+      "id": 7,
+      "name": "SpriteX1",
+      "option": "175ml",
+      "price": "10",
+      "amount": "1",
+      "img": "https://images.unsplash.com/photo-1502396278361-f6ef9aeac89c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+    },
+    {
+      "id": 8,
+      "name": "SpriteX2",
+      "option": "300ml",
+      "price": "12",
+      "amount": "1",
+      "img": "https://images.unsplash.com/photo-1557746534-7e6ca4397ff5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+    },
+    {
+      "id": 9,
+      "name": "SpriteX3",
+      "option": "355ml",
+      "price": "20",
+      "amount": "1",
+      "img": "https://images.unsplash.com/photo-1592860893757-84536a1c9b82?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+    }
+  ],
+  "location": [
+    {
+      "name": "206/40 กทม บางมด ทุ่งครุ",
+      "id": 1
     }
   ]
 }
