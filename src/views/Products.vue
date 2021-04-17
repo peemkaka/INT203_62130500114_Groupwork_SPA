@@ -2,7 +2,6 @@
   <div class="Products-container">
     <div class="container">
       <!-- <location></location> -->
-      <p class="heading">this is product page</p>
       <adding-location
         v-if="isEdit"
         :oldId="oldId"
@@ -23,18 +22,20 @@
             <button @click="deleteLocation(result.id)"
             class='pl-2'><img src="@/assets/images/delete.png" width="20" height="20"></button>
             </p>
+            
           </ul>
         </frame>
       </div>
     </div>
-
+    <div class="container">
+      <p class="text-red-400">ปล.ตะกร้าอยู่ด้านล่างของเว็บไซต์</p>
+    </div>
     <div class="container">
       <list-product @add-product="addNewCart"></list-product>
     </div>
-
     <div class="container">
       <img src="@/assets/images/cart.png" class="cartlogo" />
-      <span class="heading">สินค้าตะกร้า</span>
+      <span class="heading">สินค้าในตะกร้า</span>
       <frame>
         <ul v-for="c in cart" :key="c.id">
           <li class="pb-2">
@@ -76,6 +77,7 @@ export default {
       location: [],
       isEdit: false,
       invalidClick: false,
+      result:0
     };
   },
   methods: {
