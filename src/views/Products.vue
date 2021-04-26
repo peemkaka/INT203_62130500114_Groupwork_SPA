@@ -17,10 +17,10 @@
           <ul v-for="result in location" :key="result.id">
             <p>
             <span class="text-green-600 italic">{{ result.name }}</span>
-            <button @click="editLocation($event,result.id,result.name)"
-            class='pl-2'><img src="@/assets/images/edit.png" width="20" height="20"></button>
+            <button  @click="editLocation($event,result.id,result.name)"
+            class='edit'><img src="@/assets/images/edit.png" width="20" height="20"></button>
             <button @click="deleteLocation(result.id)"
-            class='pl-2'><img src="@/assets/images/delete.png" width="20" height="20"></button>
+            class='delimg'><img src="@/assets/images/delete.png" width="20" height="20"></button>
             </p>
             
           </ul>
@@ -170,6 +170,14 @@ export default {
 </script>
 <style scoped>
 .cart3:hover {
+  transform: scale(1.7);
+  transition: transform 0.2s;
+}
+.edit:hover {
+  transform: scale(1.7);
+  transition: transform 0.2s;
+}
+.delimg:hover {
   transform: scale(1.7);
   transition: transform 0.2s;
 }

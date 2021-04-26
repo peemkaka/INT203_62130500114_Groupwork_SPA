@@ -59,3 +59,9 @@ export default {
   },
 };
 </script>
+<style scoped>
+.accept:hover {
+  transform: scale(1.7);
+  transition: transform 0.2s;
+}
+</style>  
